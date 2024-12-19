@@ -12,7 +12,7 @@ const app = express();
 
 app.use(express.json());
 app.use(helmet());
-// app.use(limiter);
+app.use(limiter);
 app.use(requestTransformer);
 app.use(responseTransformer);
 app.use(apiKeyMiddleware);
